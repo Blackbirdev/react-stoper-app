@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Button from '../Button/Button.js';
 import FormattedTime from '../FormattedTime/FormattedTime.js';
+import styles from '../Stopwatch/Stopwatch.module.scss';
 
 const Stopwatch = () => {
 
@@ -36,14 +37,12 @@ const Stopwatch = () => {
 
     return (
         <div>
-            <FormattedTime time={time} />
+            <div className={styles.timer}><FormattedTime time={time} /></div>
             <Button onClick={Start}>Start</Button>
             <Button onClick={Stop}>Stop</Button>
             <Button onClick={Reset}>Reset</Button>
         </div>
     );
-
-
 };
 
 export default Stopwatch;

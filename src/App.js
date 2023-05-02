@@ -6,9 +6,7 @@ const App = () => {
     <Container>
       <Stopwatch />
     </Container>
-
   );
 };
-
 
 export default App;
